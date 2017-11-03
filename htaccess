@@ -1,0 +1,6 @@
+Options -Indexes
+
+RewriteEngine on
+RewriteRule ^bookservice/books/$ bookservice.php
+RewriteRule ^bookservice/books$ bookservice.php
+RewriteRule ^bookservice/books/([a-zA-Z0-9_\-]+)/?$ bookservice.php?bookid=$1
